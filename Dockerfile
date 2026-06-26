@@ -1,0 +1,14 @@
+FROM python:3.11-slim
+
+WORKDIR /code
+
+COPY ./requirements.txt /code/requirements.txt
+
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+
+COPY . .
+
+# Expose port 7860 which Hugging Face listens to by default
+EXPOSE 7860
+
+CMD ["streamlit", "run", "app.py", "--server.port=7860", "--server.address=0.0.0.0"]
