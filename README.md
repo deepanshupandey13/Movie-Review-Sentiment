@@ -10,9 +10,7 @@ pinned: false
 
 # 🎬 Movie Review Sentiment Analysis
 
-A deep learning–based web application that classifies movie reviews as **Positive** or **Negative** using a fine-tuned Transformer model.
-
----
+A deep learning-based web application that classifies movie reviews as **Positive** or **Negative** using a fine-tuned Transformer model.
 
 ## Features
 
@@ -22,8 +20,6 @@ A deep learning–based web application that classifies movie reviews as **Posit
 * Dockerized deployment
 * Hosted on Hugging Face Spaces
 
----
-
 ## Tech Stack
 
 * Python
@@ -31,8 +27,6 @@ A deep learning–based web application that classifies movie reviews as **Posit
 * Hugging Face Transformers
 * Streamlit
 * Docker
-
----
 
 ## Project Structure
 
@@ -50,27 +44,21 @@ A deep learning–based web application that classifies movie reviews as **Posit
     └── ...
 ```
 
----
-
 ## Run Locally
 
-### Install dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Start the application
+Run the application:
 
 ```bash
 streamlit run app.py
 ```
 
----
-
 ## Deployment
 
-The application is containerized using Docker and deployed on **Hugging Face Spaces**.
-
----
+The application is containerized using Docker and deployed on Hugging Face Spaces.
 
